@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tags, Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(85, 85, 85);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+        }
+
+        nav > a{
+            color: white;
+            margin: 100px;
+            text-decoration: none;
+        }
+
+        main{
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 20px 1px;
+        }
+
+        #assuntos{
+            background-color: rgb(158, 158, 158);
+            font-size: 18px;
+            text-align: center;
+            
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(158, 158, 158);
+            text-align: right;
+            margin-left: auto;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;            
+        }
+        footer > p{
+            margin: 0px;
+            font: lighter italic 12px Arial;
+            color: lightgray;
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi velit ab sit, est voluptatibus quaerat neque temporibus deserunt. Unde labore non ad amet tenetur maiores minus velit eligendi aspernatur.</p>
+                <aside>
+                    <p>Aritgo escrito por zelezim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Diogo Ivo</p>
+    </footer>
+    <div id="bola">
+        ta ae
+    </div>
+</body>
+</html>

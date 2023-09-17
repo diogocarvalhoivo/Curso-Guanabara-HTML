@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abrir esse site em site dispositivos diferentes, ou simplismente aumente ou diminua o tamanho do seu navegador</p>
+    <picture> <!--para usar o source tem que usar a hierarquia da menor imagem para a maior imagem-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!--para imagens menor q 750px mostrar foto-p-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--para imagens menor q 1000px mostrar foto-m-->
+        <img src="imagens/foto-g.png" alt="Imagem flex+ivel"> <!--mostra foto-g-->
+    </picture>
+    <p>Girar o telefone e mudar o tamanho da imagem.</p>
+    <picture>
+        <source media="(max-width: 1050px)" srcset="imagens/empe.png" type="image/png">
+        <img src="imagens/deitado.png" alt="Imagem em pé">
+    </picture>
+    <h1>Reprodução de áudio</h1>
+    <p>Maneira um tanto limitado aos browsers:</p>
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+    <p>Maneira mais completa:</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio,<a href="midia/guanacast-33.mp3">clique aqui para reproduzir</a></p>
+    </audio>
+
+    
+</body>
+</html>

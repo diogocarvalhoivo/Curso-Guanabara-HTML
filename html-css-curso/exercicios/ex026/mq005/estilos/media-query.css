@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Todas as demais  midias
+
+Typical device breakpoints:
+Mobile devices – 320px — 480px.
+iPads, Tablets – 768px — 992px.
+Desktops, large screens – 992px — 1200px.
+Extra large screens, TV – 1200px */
+
+@media screen and (min-width: 768px){
+    #hamb{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+     
+    main{
+        width: 768px;
+    }
+}
